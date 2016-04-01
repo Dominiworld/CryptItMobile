@@ -72,8 +72,8 @@ namespace CryptItMobile
 			// aapt resource value: 0x7f050007
 			public const int friendTextView = 2131034119;
 			
-			// aapt resource value: 0x7f050009
-			public const int friendsListView = 2131034121;
+			// aapt resource value: 0x7f05000a
+			public const int friendsListView = 2131034122;
 			
 			// aapt resource value: 0x7f050001
 			public const int messageEditText = 2131034113;
@@ -82,13 +82,16 @@ namespace CryptItMobile
 			public const int messageImageView = 2131034115;
 			
 			// aapt resource value: 0x7f050004
-			public const int messageTextView = 2131034116;
-			
-			// aapt resource value: 0x7f050008
-			public const int onlineTextView = 2131034120;
+			public const int messageNameTextView = 2131034116;
 			
 			// aapt resource value: 0x7f050005
-			public const int тфдлукТфьуTextView = 2131034117;
+			public const int messageTextView = 2131034117;
+			
+			// aapt resource value: 0x7f050008
+			public const int onlineImageView = 2131034120;
+			
+			// aapt resource value: 0x7f050009
+			public const int searchEditText = 2131034121;
 			
 			static Id()
 			{

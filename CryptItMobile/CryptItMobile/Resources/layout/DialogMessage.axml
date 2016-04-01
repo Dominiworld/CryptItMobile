@@ -10,9 +10,9 @@
     <TextView
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:id="@+id/messageTextView" />
+        android:id="@+id/messageNameTextView" />
     <TextView
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:id="@+id/тфдлукТфьуTextView" />
+        android:id="@+id/messageTextView" />
 </LinearLayout>

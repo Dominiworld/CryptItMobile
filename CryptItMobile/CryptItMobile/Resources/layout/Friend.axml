@@ -11,8 +11,8 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:id="@+id/friendTextView" />
-    <TextView
+    <ImageView
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:id="@+id/onlineTextView" />
+        android:id="@+id/onlineImageView" />
 </LinearLayout>
