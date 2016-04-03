@@ -25,12 +25,14 @@ public final class R {
         public static final int messageTextView=0x7f050005;
         public static final int onlineImageView=0x7f050008;
         public static final int searchEditText=0x7f050009;
+        public static final int webview=0x7f05000b;
     }
     public static final class layout {
         public static final int dialog=0x7f030000;
         public static final int dialogmessage=0x7f030001;
         public static final int friend=0x7f030002;
         public static final int main=0x7f030003;
+        public static final int start=0x7f030004;
     }
     public static final class string {
         public static final int ApplicationName=0x7f040001;

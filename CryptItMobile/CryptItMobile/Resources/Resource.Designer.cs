@@ -93,6 +93,9 @@ namespace CryptItMobile
 			// aapt resource value: 0x7f050009
 			public const int searchEditText = 2131034121;
 			
+			// aapt resource value: 0x7f05000b
+			public const int webview = 2131034123;
+			
 			static Id()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -117,6 +120,9 @@ namespace CryptItMobile
 			
 			// aapt resource value: 0x7f030003
 			public const int Main = 2130903043;
+			
+			// aapt resource value: 0x7f030004
+			public const int Start = 2130903044;
 			
 			static Layout()
 			{
