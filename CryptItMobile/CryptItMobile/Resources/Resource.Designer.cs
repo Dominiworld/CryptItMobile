@@ -94,7 +94,7 @@ namespace CryptItMobile
 			public const int searchEditText = 2131034121;
 			
 			// aapt resource value: 0x7f05000b
-			public const int webview = 2131034123;
+			public const int webView = 2131034123;
 			
 			static Id()
 			{

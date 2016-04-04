@@ -25,7 +25,7 @@ public final class R {
         public static final int messageTextView=0x7f050005;
         public static final int onlineImageView=0x7f050008;
         public static final int searchEditText=0x7f050009;
-        public static final int webview=0x7f05000b;
+        public static final int webView=0x7f05000b;
     }
     public static final class layout {
         public static final int dialog=0x7f030000;
