@@ -3,16 +3,12 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <ImageView
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:id="@+id/messageImageView" />
     <TextView
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:id="@+id/messageNameTextView" />
+        android:id="@+id/friendMessageTimeTextView" />
     <TextView
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:id="@+id/messageTextView" />
+        android:id="@+id/friendMessageTextView" />
 </LinearLayout>

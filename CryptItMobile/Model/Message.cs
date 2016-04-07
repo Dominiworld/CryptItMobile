@@ -22,8 +22,11 @@ namespace Model
 
         [JsonProperty("date")]
         public int UnixTime { get; set; }//количство секунд с 1.01.1970
+        /// <summary>
+        /// 0-полученное, 1-отправленное
+        /// </summary>
         [JsonProperty("out")]
-        public bool Out { get; set;  } //0-полученное, 1-отправленное
+        public bool Out { get; set;  }
         [JsonProperty("body")]
         public string Body { get; set; } //принятое сообщение
         public bool IsNotRead { get; set; }

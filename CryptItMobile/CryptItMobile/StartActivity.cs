@@ -31,7 +31,6 @@ namespace CryptItMobile
             webView = FindViewById<WebView>(Resource.Id.webView);
             webView.SetWebViewClient(new MyWebViewClient());
             webView.LoadUrl(AuthorizeUrl);
-            
         }
 
         public class MyWebViewClient : WebViewClient

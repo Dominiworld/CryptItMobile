@@ -29,6 +29,13 @@ namespace CryptItMobile
             _friendsListView = FindViewById<ListView>(Resource.Id.friendsListView);
             _friendsAdapter = new FriendsAdapter(this);
             _friendsListView.Adapter = _friendsAdapter;
+
+            _friendsListView.ItemClick += (sender, e) =>
+            {
+                var intent = new Intent(this, typeof(DialogActivity));
+                intent.PutExtra("FriendId", _friendsAdapter._friends[e.Position].Id);//todo переделать когда перенесу друзей в активити
+                StartActivity(intent);
+            };
         }
 
         

@@ -21,7 +21,7 @@ namespace CryptItMobile.Adapters
     {
         private LayoutInflater lInflater;
         private UserService _userService = new UserService();
-        private List<User> _friends;
+        public List<User> _friends;//todo Вынести получение друзей в активити
 
        
         public FriendsAdapter(Context context)
@@ -39,7 +39,7 @@ namespace CryptItMobile.Adapters
 
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
-            View view = lInflater.Inflate(Resource.Layout.Friend, null, false); ;
+            View view = lInflater.Inflate(Resource.Layout.Friend, null, false);
 
             var imageBitmap = GetImageBitmapFromUrl(_friends[position].PhotoUrl);
             view.FindViewById<ImageView>(Resource.Id.friendImageView).SetImageBitmap(imageBitmap);

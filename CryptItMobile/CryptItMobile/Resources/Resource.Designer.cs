@@ -66,35 +66,38 @@ namespace CryptItMobile
 			// aapt resource value: 0x7f050002
 			public const int enterButton = 2131034114;
 			
-			// aapt resource value: 0x7f050006
-			public const int friendImageView = 2131034118;
+			// aapt resource value: 0x7f050003
+			public const int friendImageView = 2131034115;
 			
 			// aapt resource value: 0x7f050007
-			public const int friendTextView = 2131034119;
+			public const int friendMessageTextView = 2131034119;
 			
-			// aapt resource value: 0x7f05000a
-			public const int friendsListView = 2131034122;
+			// aapt resource value: 0x7f050006
+			public const int friendMessageTimeTextView = 2131034118;
+			
+			// aapt resource value: 0x7f050004
+			public const int friendTextView = 2131034116;
+			
+			// aapt resource value: 0x7f050009
+			public const int friendsListView = 2131034121;
 			
 			// aapt resource value: 0x7f050001
 			public const int messageEditText = 2131034113;
 			
-			// aapt resource value: 0x7f050003
-			public const int messageImageView = 2131034115;
+			// aapt resource value: 0x7f05000b
+			public const int myMessageTextView = 2131034123;
 			
-			// aapt resource value: 0x7f050004
-			public const int messageNameTextView = 2131034116;
+			// aapt resource value: 0x7f05000a
+			public const int myMessageTimeTextView = 2131034122;
 			
 			// aapt resource value: 0x7f050005
-			public const int messageTextView = 2131034117;
+			public const int onlineImageView = 2131034117;
 			
 			// aapt resource value: 0x7f050008
-			public const int onlineImageView = 2131034120;
+			public const int searchEditText = 2131034120;
 			
-			// aapt resource value: 0x7f050009
-			public const int searchEditText = 2131034121;
-			
-			// aapt resource value: 0x7f05000b
-			public const int webView = 2131034123;
+			// aapt resource value: 0x7f05000c
+			public const int webView = 2131034124;
 			
 			static Id()
 			{
@@ -113,16 +116,19 @@ namespace CryptItMobile
 			public const int Dialog = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int DialogMessage = 2130903041;
+			public const int Friend = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int Friend = 2130903042;
+			public const int FriendMessage = 2130903042;
 			
 			// aapt resource value: 0x7f030003
 			public const int Main = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int Start = 2130903044;
+			public const int MyMessage = 2130903044;
+			
+			// aapt resource value: 0x7f030005
+			public const int Start = 2130903045;
 			
 			static Layout()
 			{
