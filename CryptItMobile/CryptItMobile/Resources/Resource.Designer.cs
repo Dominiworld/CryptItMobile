@@ -60,11 +60,11 @@ namespace CryptItMobile
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050000
-			public const int dialogListView = 2131034112;
-			
 			// aapt resource value: 0x7f050002
-			public const int enterButton = 2131034114;
+			public const int dialogListView = 2131034114;
+			
+			// aapt resource value: 0x7f050001
+			public const int enterButton = 2131034113;
 			
 			// aapt resource value: 0x7f050003
 			public const int friendImageView = 2131034115;
@@ -81,8 +81,8 @@ namespace CryptItMobile
 			// aapt resource value: 0x7f050009
 			public const int friendsListView = 2131034121;
 			
-			// aapt resource value: 0x7f050001
-			public const int messageEditText = 2131034113;
+			// aapt resource value: 0x7f050000
+			public const int messageEditText = 2131034112;
 			
 			// aapt resource value: 0x7f05000b
 			public const int myMessageTextView = 2131034123;

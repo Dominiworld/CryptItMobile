@@ -18,14 +18,12 @@ namespace CryptItMobile.Adapters
     public class DialogAdapter : BaseAdapter
     {
         private List<Message> _messages;
-        private LayoutInflater lInflater;
         private MessageService _messageService = new MessageService();
-        private int _friendId;
+        private LayoutInflater lInflater;
 
         public DialogAdapter(Context context, int friendId)
         {
-            _friendId = friendId;
-            GetMessages();
+            GetMessages(friendId);
             lInflater = (LayoutInflater)context.GetSystemService(Context.LayoutInflaterService);
         }
 
@@ -62,7 +60,7 @@ namespace CryptItMobile.Adapters
                     _messages[position].Date.ToString();
 
             }
-            else//заполнени своего сообщения
+            else//заполнение своего сообщения
             {
                 view = lInflater.Inflate(Resource.Layout.MyMessage, null, false);
                 view.FindViewById<TextView>(Resource.Id.myMessageTextView).Text = _messages[position].Body;
@@ -75,11 +73,18 @@ namespace CryptItMobile.Adapters
             return view;
         }
 
-        private async void GetMessages()
+        private async void GetMessages(int friendId)
         {
-            _messages = (await _messageService.GetDialog(_friendId)).ToList();
-
+            _messages = (await _messageService.GetDialog(friendId)).ToList();
+            _messages.Reverse();
             NotifyDataSetChanged();
         }
+
+        public void NewMessage(Message message) //todo на рефакторинг 
+        {
+            _messages.Add(message);
+            NotifyDataSetChanged();
+        }
+       
     }
 }
