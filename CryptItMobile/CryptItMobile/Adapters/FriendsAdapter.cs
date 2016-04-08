@@ -12,6 +12,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Java.Lang;
+using Javax.Crypto.Interfaces;
 using Model;
 using vkAPI;
 
@@ -21,7 +22,8 @@ namespace CryptItMobile.Adapters
     {
         private LayoutInflater lInflater;
         private UserService _userService = new UserService();
-        public List<User> _friends;//todo Вынести получение друзей в активити
+        public List<User> _friends;//todo Подумать, как сделать приватным (нужен для интента в main)
+        private List<User> _allFriends;
 
        
         public FriendsAdapter(Context context)
@@ -70,9 +72,9 @@ namespace CryptItMobile.Adapters
 
         private async void GetFriends()
         {
-            _friends = (await _userService.GetFriends(AuthorizeService.Instance.CurrentUserId)).ToList();
-            
-            _friends = _friends.OrderBy(f => f.LastName).ToList();
+            _allFriends = (await _userService.GetFriends(AuthorizeService.Instance.CurrentUserId)).ToList();
+            _allFriends=_allFriends.OrderBy(f => f.LastName).ToList();
+            _friends = _allFriends.OrderBy(f => f.LastName).ToList();
             NotifyDataSetChanged();
         }
 
@@ -90,6 +92,18 @@ namespace CryptItMobile.Adapters
             }
 
             return imageBitmap;
+        }
+
+        public void Search(string searchString)
+        {
+            if (_allFriends != null)
+            {
+                _friends = string.IsNullOrEmpty(searchString)
+                    ? _allFriends
+                    : _allFriends.Where(f => f.FullName.ToLower().Contains(searchString.ToLower())).ToList();
+                NotifyDataSetChanged();
+            }
+            //else Вставить чего для торопыг
         }
     }
 }

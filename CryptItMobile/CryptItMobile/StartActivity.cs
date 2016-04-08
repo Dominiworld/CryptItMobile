@@ -12,10 +12,11 @@ using Android.Webkit;
 using Android.Widget;
 using Java.Net;
 using vkAPI;
+using Android.Content.PM;
 
 namespace CryptItMobile
 {
-    [Activity(Label = "StartActivity",  MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "StartActivity",  MainLauncher = true, Icon = "@drawable/icon", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
     public class StartActivity : Activity
     {
         WebView webView;

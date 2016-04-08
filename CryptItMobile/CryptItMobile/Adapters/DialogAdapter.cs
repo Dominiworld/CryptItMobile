@@ -49,7 +49,7 @@ namespace CryptItMobile.Adapters
             return position;
         }
 
-        public override View GetView(int position, View convertView, ViewGroup parent)
+        public override View GetView(int position, View convertView, ViewGroup parent)//todo припилить convertView
         {
             View view;
             if (!_messages[position].Out)//«аполнение сообщени€ от друга
@@ -77,6 +77,7 @@ namespace CryptItMobile.Adapters
         {
             _messages = (await _messageService.GetDialog(friendId)).ToList();
             _messages.Reverse();
+            
             NotifyDataSetChanged();
         }
 

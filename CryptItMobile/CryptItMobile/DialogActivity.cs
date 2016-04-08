@@ -12,11 +12,11 @@ using Android.Views;
 using Android.Widget;
 using CryptItMobile.Adapters;
 using vkAPI;
-using Message = Model.Message;
+using Android.Content.PM;
 
 namespace CryptItMobile
 {
-    [Activity(Label = "DialogActivity")]
+    [Activity(Label = "DialogActivity", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
     public class DialogActivity : Activity
     {
         private ListView _dialogListView;
