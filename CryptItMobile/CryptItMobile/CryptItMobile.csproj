@@ -51,11 +51,11 @@
   <ItemGroup>
     <Compile Include="Adapters\DialogAdapter.cs" />
     <Compile Include="Adapters\FriendsAdapter.cs" />
-    <Compile Include="DialogActivity.cs" />
-    <Compile Include="MainActivity.cs" />
+    <Compile Include="Activities\DialogActivity.cs" />
+    <Compile Include="Activities\MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StartActivity.cs" />
+    <Compile Include="Activities\StartActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

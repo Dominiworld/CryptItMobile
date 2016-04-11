@@ -73,17 +73,23 @@ namespace CryptItMobile.Adapters
             return view;
         }
 
-        private async void GetMessages(int friendId)
+        public async void GetMessages(int friendId) //todo попробовать убрать public
         {
-            _messages = (await _messageService.GetDialog(friendId)).ToList();
-            _messages.Reverse();
+            if (_messages == null)
+            {
+                _messages = (await _messageService.GetDialog(friendId)).ToList();
+            }
+            else
+            {
+                _messages.AddRange((await _messageService.GetDialog(friendId, Count)).ToList());
+            }
             
             NotifyDataSetChanged();
         }
 
         public void NewMessage(Message message) //todo на рефакторинг 
         {
-            _messages.Add(message);
+            _messages.Insert(0,message);
             NotifyDataSetChanged();
         }
        

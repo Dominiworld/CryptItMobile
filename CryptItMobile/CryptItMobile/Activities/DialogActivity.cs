@@ -1,20 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-
 using Android.App;
-using Android.Content;
+using Android.Content.PM;
 using Android.OS;
-using Android.Runtime;
-using Android.Views;
 using Android.Widget;
 using CryptItMobile.Adapters;
 using vkAPI;
-using Android.Content.PM;
 
-namespace CryptItMobile
+namespace CryptItMobile.Activities
 {
     [Activity(Label = "DialogActivity", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
     public class DialogActivity : Activity
@@ -51,6 +42,16 @@ namespace CryptItMobile
             {
                 SendMessage(friendId);
                 _messageText.Text = string.Empty;
+            };
+
+            //todo сделать loader
+            _dialogListView.Scroll += (sender, e) =>
+            {
+                if (_dialogListView.LastVisiblePosition == _dialogAdapter.Count-1)//todo менять если сменил навправление листа
+                {
+                    _dialogAdapter.GetMessages(friendId); 
+                }
+                
             };
         }
 

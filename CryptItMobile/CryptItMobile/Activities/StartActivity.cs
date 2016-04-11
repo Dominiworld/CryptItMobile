@@ -1,20 +1,12 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
 using Android.App;
 using Android.Content;
+using Android.Content.PM;
 using Android.OS;
-using Android.Runtime;
-using Android.Views;
 using Android.Webkit;
-using Android.Widget;
 using Java.Net;
 using vkAPI;
-using Android.Content.PM;
 
-namespace CryptItMobile
+namespace CryptItMobile.Activities
 {
     [Activity(Label = "StartActivity",  MainLauncher = true, Icon = "@drawable/icon", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
     public class StartActivity : Activity

@@ -1,18 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using Android.App;
+﻿using Android.App;
 using Android.Content;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
-using Android.OS;
-using CryptItMobile.Adapters;
-using vkAPI;
 using Android.Content.PM;
-using Model;
+using Android.OS;
+using Android.Widget;
+using CryptItMobile.Adapters;
 
-namespace CryptItMobile
+namespace CryptItMobile.Activities
 {
     [Activity(Label = "CryptItMobile", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
     public class MainActivity : Activity
