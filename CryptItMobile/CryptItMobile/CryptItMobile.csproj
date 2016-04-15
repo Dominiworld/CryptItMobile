@@ -75,6 +75,10 @@
     <AndroidResource Include="Resources\layout\MyMessage.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\drawable\rectangle_rounded_all.axml" />
+    <AndroidResource Include="Resources\drawable\rectangle_rounded_bottom.axml" />
+    <AndroidResource Include="Resources\drawable\rectangle_rounded_top.axml" />
+    <AndroidResource Include="Resources\drawable\Thumbs.db" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml" />
@@ -97,6 +101,9 @@
       <Project>{4930bf6a-9801-4a38-a756-6dcbfd285e1b}</Project>
       <Name>vkAPI</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\online.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
